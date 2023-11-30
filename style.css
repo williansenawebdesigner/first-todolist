@@ -1,0 +1,92 @@
+/* reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+
+}
+
+body{
+    background: url(./img/bg.jpg);
+}
+
+img{
+    height: 23px;
+    opacity: 0;
+    transition: opacity  0.5s ease-in-out;
+}
+
+.input-task{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.button-task{
+    border: none;
+    border-radius: 10px;
+    height:40px;
+    background-color:#0a3a3a;
+    color: #fff;
+    padding: 10px 25px;
+    float: right;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.button-task:hover{
+    background-color: #020e0e;
+    transition: all 0.5s ease-in;
+}
+
+.list-task{
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.task{
+    background-color: #fff;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+.done{
+    background-color:#1d634fa9;
+    text-decoration: line-through;
+}
+
+.container{
+    background-color: #e2e2e2ad;
+    width: 500px;
+    border-radius: 15px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        width: 90%;
+    }
+    .input-task{
+        width: 60%;
+        font-size: 12px;
+    }
+}
