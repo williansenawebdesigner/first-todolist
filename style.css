@@ -14,7 +14,7 @@ body{
 
 img{
     height: 23px;
-    opacity: 0;
+    opacity: 0.2;
     transition: opacity  0.5s ease-in-out;
 }
 
@@ -74,7 +74,10 @@ img{
 }
 
 .container{
-    background-color: #e2e2e2ad;
+    backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color: #e2e2e25a;
     width: 500px;
     border-radius: 15px;
     margin: 100px auto 0;
@@ -87,6 +90,9 @@ img{
     }
     .input-task{
         width: 60%;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .task{
+    font-size:14px;
     }
 }
