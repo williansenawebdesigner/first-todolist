@@ -11,7 +11,6 @@ function adNewTask () {
 
     input.value = ''
     viewTask()
-
 }
 
 function viewTask () {
