@@ -53,5 +53,17 @@ function reloadTask(){
 
 } reloadTask()
 
+// Adicionar tarefa com clique no enter
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+    
+        var btn = document.querySelector(".button-task");
+      
+      btn.click();
+    
+    }
+  });
+
+  //Adicionar tarefa ao clicar no input ADICIONAR
 button.addEventListener('click', adNewTask)
 
